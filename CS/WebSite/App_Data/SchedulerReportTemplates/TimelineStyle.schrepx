@@ -1,0 +1,119 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName></AssemblyFullName>
+///   <AssemblyLocation></AssemblyLocation>
+///   <TypeName>DevExpress.XtraScheduler.ReportTemplates.TimelineStyle</TypeName>
+///   <Localization>en-US</Localization>
+///   <References>
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Data.SqlXml\2.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\2.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///   </References>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class TimelineStyle : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraScheduler.Reporting.CalendarControl calendarControl1;
+        private DevExpress.XtraScheduler.Reporting.TimelineCells timelineCells1;
+        private DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders timelineScaleHeaders1;
+        private DevExpress.XtraScheduler.Reporting.ReportTimelineView reportTimelineView1;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private System.Resources.ResourceManager _resources;
+        public TimelineStyle() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.calendarControl1 = new DevExpress.XtraScheduler.Reporting.CalendarControl();
+            this.timelineCells1 = new DevExpress.XtraScheduler.Reporting.TimelineCells();
+            this.timelineScaleHeaders1 = new DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders();
+            this.reportTimelineView1 = new DevExpress.XtraScheduler.Reporting.ReportTimelineView();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            ((System.ComponentModel.ISupportInitialize)(this.reportTimelineView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // calendarControl1
+            // 
+            this.calendarControl1.LocationFloat = new DevExpress.Utils.PointFloat(283F, 8F);
+            this.calendarControl1.Name = "calendarControl1";
+            this.calendarControl1.SizeF = new System.Drawing.SizeF(350F, 138F);
+            this.calendarControl1.TimeCells = this.timelineCells1;
+            this.calendarControl1.View = this.reportTimelineView1;
+            // 
+            // timelineCells1
+            // 
+            this.timelineCells1.AppointmentDisplayOptions.AppointmentHeight = 30;
+            this.timelineCells1.AppointmentDisplayOptions.EndTimeVisibility = DevExpress.XtraScheduler.AppointmentTimeVisibility.Never;
+            this.timelineCells1.AppointmentDisplayOptions.StartTimeVisibility = DevExpress.XtraScheduler.AppointmentTimeVisibility.Never;
+            this.timelineCells1.HorizontalHeaders = this.timelineScaleHeaders1;
+            this.timelineCells1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 223F);
+            this.timelineCells1.Name = "timelineCells1";
+            this.timelineCells1.SizeF = new System.Drawing.SizeF(650F, 500F);
+            this.timelineCells1.View = this.reportTimelineView1;
+            // 
+            // timelineScaleHeaders1
+            // 
+            this.timelineScaleHeaders1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 173F);
+            this.timelineScaleHeaders1.Name = "timelineScaleHeaders1";
+            this.timelineScaleHeaders1.SizeF = new System.Drawing.SizeF(650F, 50F);
+            this.timelineScaleHeaders1.View = this.reportTimelineView1;
+            // 
+            // reportTimelineView1
+            // 
+            //this.reportTimelineView1.VisibleIntervalCount = 7;
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.timelineScaleHeaders1,
+                        this.timelineCells1,
+                        this.calendarControl1});
+            this.Detail.HeightF = 732F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // TimelineStyle
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1});
+            this.Name = "TimelineStyle";
+            this.PageHeight = 1100;
+            this.PageWidth = 850;
+            this.Version = "12.1";
+            ((System.ComponentModel.ISupportInitialize)(this.reportTimelineView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

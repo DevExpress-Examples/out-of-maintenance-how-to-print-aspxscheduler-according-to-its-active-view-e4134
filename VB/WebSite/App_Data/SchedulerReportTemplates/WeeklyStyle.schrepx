@@ -1,0 +1,112 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName></AssemblyFullName>
+///   <AssemblyLocation></AssemblyLocation>
+///   <TypeName>DevExpress.XtraScheduler.ReportTemplates.WeeklyStyle</TypeName>
+///   <Localization>en-US</Localization>
+///   <References>
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Data.SqlXml\2.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\2.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///   </References>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class WeeklyStyle : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraScheduler.Reporting.ReportWeekView reportWeekView1;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders horizontalResourceHeaders1;
+        private DevExpress.XtraScheduler.Reporting.FullWeek fullWeek1;
+        private DevExpress.XtraScheduler.Reporting.TimeIntervalInfo timeIntervalInfo1;
+        private DevExpress.XtraScheduler.Reporting.CalendarControl calendarControl1;
+        private System.Resources.ResourceManager _resources;
+        public WeeklyStyle() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.reportWeekView1 = new DevExpress.XtraScheduler.Reporting.ReportWeekView();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.fullWeek1 = new DevExpress.XtraScheduler.Reporting.FullWeek();
+            this.calendarControl1 = new DevExpress.XtraScheduler.Reporting.CalendarControl();
+            this.horizontalResourceHeaders1 = new DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders();
+            this.timeIntervalInfo1 = new DevExpress.XtraScheduler.Reporting.TimeIntervalInfo();
+            ((System.ComponentModel.ISupportInitialize)(this.reportWeekView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // reportWeekView1
+            // 
+            //this.reportWeekView1.VisibleResourceCount = 2;
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.horizontalResourceHeaders1,
+                        this.fullWeek1,
+                        this.timeIntervalInfo1,
+                        this.calendarControl1});
+            this.Detail.HeightF = 875F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // fullWeek1
+            // 
+            this.fullWeek1.HorizontalHeaders = this.horizontalResourceHeaders1;
+            this.fullWeek1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 183F);
+            this.fullWeek1.Name = "fullWeek1";
+            this.fullWeek1.SizeF = new System.Drawing.SizeF(650F, 683F);
+            this.fullWeek1.View = this.reportWeekView1;
+            // 
+            // calendarControl1
+            // 
+            this.calendarControl1.LocationFloat = new DevExpress.Utils.PointFloat(283F, 8F);
+            this.calendarControl1.Name = "calendarControl1";
+            this.calendarControl1.SizeF = new System.Drawing.SizeF(350F, 142F);
+            this.calendarControl1.TimeCells = this.fullWeek1;
+            this.calendarControl1.View = this.reportWeekView1;
+            // 
+            // horizontalResourceHeaders1
+            // 
+            this.horizontalResourceHeaders1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 158F);
+            this.horizontalResourceHeaders1.Name = "horizontalResourceHeaders1";
+            this.horizontalResourceHeaders1.SizeF = new System.Drawing.SizeF(650F, 25F);
+            this.horizontalResourceHeaders1.View = this.reportWeekView1;
+            // 
+            // timeIntervalInfo1
+            // 
+            this.timeIntervalInfo1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 33F);
+            this.timeIntervalInfo1.Name = "timeIntervalInfo1";
+            this.timeIntervalInfo1.SizeF = new System.Drawing.SizeF(233F, 92F);
+            this.timeIntervalInfo1.TimeCells = this.fullWeek1;
+            // 
+            // WeeklyStyle
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail});
+            this.Name = "WeeklyStyle";
+            this.PageHeight = 1100;
+            this.PageWidth = 850;
+            this.Version = "12.1";
+            ((System.ComponentModel.ISupportInitialize)(this.reportWeekView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
