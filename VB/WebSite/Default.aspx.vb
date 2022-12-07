@@ -7,7 +7,7 @@ Imports System.Web
 Imports System.Web.UI
 Imports System.Web.UI.HtmlControls
 Imports DevExpress.Web.ASPxScheduler
-Imports DevExpress.Web.ASPxMenu
+Imports DevExpress.Web
 Imports DevExpress.XtraScheduler
 
 Partial Public Class [Default]
@@ -34,7 +34,7 @@ Partial Public Class [Default]
 		cp.Controls.Add(reportPreview)
 	End Sub
 
-	Protected Sub ASPxCallbackPanel1_Callback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxClasses.CallbackEventArgsBase)
+	Protected Sub ASPxCallbackPanel1_Callback(ByVal sender As Object, ByVal e As DevExpress.Web.CallbackEventArgsBase)
 		PreviewPanel.Visible = True
 	End Sub
 

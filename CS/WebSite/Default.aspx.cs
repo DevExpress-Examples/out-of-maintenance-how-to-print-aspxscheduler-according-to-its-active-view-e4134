@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using DevExpress.Web.ASPxScheduler;
-using DevExpress.Web.ASPxMenu;
+using DevExpress.Web;
 using DevExpress.XtraScheduler;
 
 public partial class Default : System.Web.UI.Page {
@@ -32,7 +32,7 @@ public partial class Default : System.Web.UI.Page {
         cp.Controls.Add(reportPreview);
     }
 
-    protected void ASPxCallbackPanel1_Callback(object sender, DevExpress.Web.ASPxClasses.CallbackEventArgsBase e) {
+    protected void ASPxCallbackPanel1_Callback(object sender, DevExpress.Web.CallbackEventArgsBase e) {
         PreviewPanel.Visible = true;
     }
 
